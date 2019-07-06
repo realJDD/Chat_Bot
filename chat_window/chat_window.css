@@ -11,7 +11,7 @@
     position: absolute;
     width: calc(100% - 20px);
     max-width: 800px;
-    height: 500px;
+    height: 700px;
     border-radius: 10px;
     background-color: #fff;
     left: 50%;
@@ -40,7 +40,7 @@
     list-style: none;
     padding: 20px 10px 0 10px;
     margin: 0;
-    height: 347px;
+    height: 545px;
     overflow: scroll;
   }
   .messages .message {
@@ -51,32 +51,34 @@
     opacity: 0;
   }
   .messages .message.left .avatar {
-    background-color: blue;
+    background: #FFA500;
+    content: url(images/user.jpg);
     float: left;
   }
   .messages .message.left .text_wrapper {
-    background-color: lightblue;
+    background-color: #1E90FF;
     margin-left: 20px;
   }
   .messages .message.left .text_wrapper::after, .messages .message.left .text_wrapper::before {
     right: 100%;
-    border-right-color: lightblue;
+    border-right-color: #1E90FF;
   }
   .messages .message.left .text {
     color: black;
   }
   .messages .message.right .avatar {
-    background-color: green;
+    background-color: #FF6347;
+    content: url(images/jarvis.png);
     float: right;
   }
   .messages .message.right .text_wrapper {
-    background-color: lightgreen;
+    background-color: #DCDCDC;
     margin-right: 20px;
     float: right;
   }
   .messages .message.right .text_wrapper::after, .messages .message.right .text_wrapper::before {
     left: 100%;
-    border-left-color: lightgreen;
+    border-left-color: #DCDCDC;
   }
   .messages .message.right .text {
     color: black;
@@ -151,8 +153,8 @@
     height: 50px;
     display: inline-block;
     border-radius: 50px;
-    background-color: #a3d063;
-    border: 2px solid #a3d063;
+    background-color: #1E90FF;
+    border: 2px solid #1E90FF;
     color: #fff;
     cursor: pointer;
     transition: all 0.2s linear;

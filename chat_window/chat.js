@@ -17,25 +17,31 @@
     };
     $(function () {
         var getMessageText, message_side, sendMessage, responseMessage;
-        message_side = 'right';
+     
         getMessageText = function () {
             var $message_input;
             $message_input = $('.message_input');
             return $message_input.val();
         };
+
         sendMessage = function (text) {
             var $messages, message;
+
             if (text.trim() === '') {
-                return;w
+                return;
             }
+
             $('.message_input').val('');
             $messages = $('.messages');
-            message_side = message_side === 'right' ? 'left' : 'right';
+            message_side ='left';
+
             message = new Message({
                 text: text,
                 message_side: message_side
             });
+
             message.draw();
+
             return $messages.animate({
                 scrollTop: $messages.prop('scrollHeight')
             }, 300);
@@ -43,15 +49,22 @@
 
         responseMessage = function (text) {
             var $messages, message;
+
             if (text.trim() === '') {
-                return;w
+                return;
             }
-            message_side = message_side === 'right' ? 'left' : 'right';
+
+            $('.message_input').val('');
+            $messages = $('.messages');
+            message_side = 'right';
+
             message = new Message({
                 text: text,
                 message_side: message_side
             });
+
             message.draw();
+
             return $messages.animate({
                 scrollTop: $messages.prop('scrollHeight')
             }, 300);
@@ -60,7 +73,9 @@
         botMessage = function(){
             return ('place holder for chatbot message')
         }
+
         $('.send_message').click(function (e) {
+            // console.log(getMessageText());
             return [sendMessage(getMessageText()), responseMessage(botMessage())]
         });
         
