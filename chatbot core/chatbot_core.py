@@ -160,44 +160,47 @@ class ChatBot:
                 self.matching_dict["matching_mode"] = False
                 self.matching_dict["list to match"] = []
         else:
-            classify_list = self.classify(sentence)
-            self.sentence_class = classify_list[0][0]
-            if self.sentence_class == "exercise" or self.sentence_class == "identification":
-                key_words_list = []
-                sentence_words = self.clean_up_sentence(sentence)
-                for w in sentence_words:
-                    if w != "have":
-                        key_words_list.extend(get_close_matches(w, self.body_parts_muscles_list))
-                key_words_list = list(set(key_words_list))
-                if show_details:
-                    print(f"key words list: {key_words_list}")
-                if len(key_words_list) == 0:
-                    response = "Seems like the key word in your sentence is not in my database!\nPlease try some other key words!"
-                else:
-                    perfect_match_list = []
-                    for w in key_words_list:
-                        if re.search(w, sentence) or (w.endswith("s") and re.search(w[:-1], sentence)) or (w.endswith("es") and re.search(w[:-2], sentence)):
-                            perfect_match_list.append(w)
-                    perfect_match_list = list(set(perfect_match_list))
-                    # Some fine tuning, which can be modified later
-                    ##############################################################################################
-                    if "biceps brachii" in perfect_match_list and "biceps" in perfect_match_list:
-                        perfect_match_list.remove("biceps")
-                    if "triceps brachii" in perfect_match_list and "triceps" in perfect_match_list:
-                        perfect_match_list.remove("triceps")
-                    if "external obliques" in perfect_match_list and "obliques" in perfect_match_list:
-                        perfect_match_list.remove("obliques")
-                    ##############################################################################################
-                    if show_details:
-                        print(f"perfect match list: {perfect_match_list}")
-                    if len(perfect_match_list) == 0:
-                        response = self.__response_for_no_match(key_words_list)
-                    elif len(perfect_match_list) == 1:
-                        response = self.__response_for_one_match(perfect_match_list[0])
-                    else:
-                        response = self.__response_for_multi_match(perfect_match_list)
+            if not nltk.word_tokenize(sentence):
+                response = "Please type in something!"
             else:
-                response = self.__other_responses()
+                classify_list = self.classify(sentence)
+                self.sentence_class = classify_list[0][0]
+                if self.sentence_class == "exercise" or self.sentence_class == "identification":
+                    key_words_list = []
+                    sentence_words = self.clean_up_sentence(sentence)
+                    for w in sentence_words:
+                        if w != "have":
+                            key_words_list.extend(get_close_matches(w, self.body_parts_muscles_list))
+                    key_words_list = list(set(key_words_list))
+                    if show_details:
+                        print(f"key words list: {key_words_list}")
+                    if len(key_words_list) == 0:
+                        response = "Seems like the key word in your sentence is not in my database!\nPlease try some other key words!"
+                    else:
+                        perfect_match_list = []
+                        for w in key_words_list:
+                            if re.search(w, sentence) or (w.endswith("s") and re.search(w[:-1], sentence)) or (w.endswith("es") and re.search(w[:-2], sentence)):
+                                perfect_match_list.append(w)
+                        perfect_match_list = list(set(perfect_match_list))
+                        # Some fine tuning, which can be modified later
+                        ##############################################################################################
+                        if "biceps brachii" in perfect_match_list and "biceps" in perfect_match_list:
+                            perfect_match_list.remove("biceps")
+                        if "triceps brachii" in perfect_match_list and "triceps" in perfect_match_list:
+                            perfect_match_list.remove("triceps")
+                        if "external obliques" in perfect_match_list and "obliques" in perfect_match_list:
+                            perfect_match_list.remove("obliques")
+                        ##############################################################################################
+                        if show_details:
+                            print(f"perfect match list: {perfect_match_list}")
+                        if len(perfect_match_list) == 0:
+                            response = self.__response_for_no_match(key_words_list)
+                        elif len(perfect_match_list) == 1:
+                            response = self.__response_for_one_match(perfect_match_list[0])
+                        else:
+                            response = self.__response_for_multi_match(perfect_match_list)
+                else:
+                    response = self.__other_responses()
         
         return response
 
