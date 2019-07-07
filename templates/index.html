@@ -2,6 +2,7 @@
 <html lang="en-us">
 
 <head>
+  <meta charset="utf-8"/>
   <title>Chat Bot</title>
 
   <!-- Bootstrap core CSS -->
@@ -13,6 +14,7 @@
 
   <!-- CSS -->
   <link href="../static/css/CSS.css" rel="stylesheet">
+  <script src="../static/js/change_z.js"></script> 
 
 </head>
 
@@ -47,28 +49,28 @@
 
 <br><br><br>
 
-<div class="container">
+<div class="container" onclick="showmuscle()">
   <div class="row">
     <div class="col-6">
       <div class="wrapper">
-      <img src="../static/images/SVG/front.png" alt="Front" class="Front-img">
-      <img src="../static/images/SVG/front/chest.png" alt="Chest" class="Chest-img">
-      <img src="../static/images/SVG/front/abs.png" alt="Abs" class="Abs-img">
-      <img src="../static/images/SVG/front/biceps.png" alt="Biceps" class="Biceps-img">
-      <img src="../static/images/SVG/front/forearms.png" alt="Forearms" class="Forearms-img">
-      <img src="../static/images/SVG/front/lower legs.png" alt="Lower Legs" class="Lower_Legs-img">
-      <img src="../static/images/SVG/front/shoulders.png" alt="Shoulders" class="Shoulders-img">
-      <img src="../static/images/SVG/front/upper legs.png" alt="Upper Legs" class="Upper_Legs-img">
+      <img src="../static/images/SVG/front.png" id="Front" alt="Front" class="Front-img">
+      <img src="../static/images/SVG/front/chest.png" id="Chest" alt="Chest" class="Chest-img">
+      <img src="../static/images/SVG/front/abs.png" id="Abs" alt="Abs" class="Abs-img">
+      <img src="../static/images/SVG/front/biceps.png" id="Biceps" alt="Biceps" class="Biceps-img">
+      <img src="../static/images/SVG/front/forearms.png" id="Forearms" alt="Forearms" class="Forearms-img">
+      <img src="../static/images/SVG/front/lower legs.png" id="Lower Legs" alt="Lower Legs" class="Lower_Legs-img">
+      <img src="../static/images/SVG/front/shoulders.png" id="Shoulders" alt="Shoulders" class="Shoulders-img">
+      <img src="../static/images/SVG/front/upper legs.png" id="Upper Legs" alt="Upper Legs" class="Upper_Legs-img">
       </div>
     </div>
     <div class="col-6">
       <div class="wrapper">
-      <img src="../static/images/SVG/Back.png" alt="Back" class="Back-img">
-      <img src="../static/images/SVG/back/Back_muscles.png" alt="Back_muscles" class="Back_muscles-img">
-      <img src="../static/images/SVG/back/Glutes.png" alt="Glutes" class="Glutes-img">
-      <img src="../static/images/SVG/back/Hamstrings.png" alt="Hamstrings" class="Hamstrings-img">
-      <img src="../static/images/SVG/back/Calf.png" alt="Calf" class="Calf-img">
-      <img src="../static/images/SVG/back/Triceps.png" alt="Triceps" class="Triceps-img">
+      <img src="../static/images/SVG/Back.png" id="Back" alt="Back" class="Back-img">
+      <img src="../static/images/SVG/back/Back_muscles.png" id="Back_muscles" alt="Back_muscles" class="Back_muscles-img">
+      <img src="../static/images/SVG/back/Glutes.png" id="Glutes" alt="Glutes" class="Glutes-img">
+      <img src="../static/images/SVG/back/Hamstrings.png" id="Hamstrings" alt="Hamstrings" class="Hamstrings-img">
+      <img src="../static/images/SVG/back/Calf.png" id="Calf" alt="Calf" class="Calf-img">
+      <img src="../static/images/SVG/back/Triceps.png" id="Triceps" alt="Triceps" class="Triceps-img">
       </div>
     </div>
   </div>
@@ -80,7 +82,8 @@
       <form>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+
         </div>
       </form>
     </div>

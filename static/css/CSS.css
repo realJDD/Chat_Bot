@@ -8,11 +8,13 @@
   width: 100%;
   max-width: 100%;
   border: 0px solid blue;
+  z-index: 1;
 }
 .Back-img{
   width: 100%;
   max-width: 100%;
   border: 0px solid red;
+  z-index: 1;
 }
 .Chest-img{
   border: 0px solid red;
@@ -21,6 +23,7 @@
   top: 19%;
   width: 30%;
   max-width:30%;
+  z-index: -1;
 }
 .Abs-img{
   border: 0px solid red;
@@ -29,6 +32,7 @@
   top: 27%;
   width: 16%;
   max-width:16%;
+  z-index: -1;
 }
 .Biceps-img{
   border: 0px solid red;
@@ -37,6 +41,7 @@
   top: 24%;
   width: 51%;
   max-width:51%;
+  z-index: -1;
 }
 .Forearms-img{
   border: 0px solid red;
@@ -45,6 +50,7 @@
   top: 33%;
   width: 65.5%;
   max-width:65.5%;
+  z-index: -1;
 }
 .Lower_Legs-img{
   border: 0px solid red;
@@ -53,6 +59,7 @@
   top: 68%;
   width: 26%;
   max-width:26%;
+  z-index: -1;
 }
 .Shoulders-img{
   border: 0px solid red;
@@ -61,6 +68,7 @@
   top: 16%;
   width: 45%;
   max-width:45%;
+  z-index: -1;
 }
 .Upper_Legs-img{
   border: 0px solid red;
@@ -69,6 +77,7 @@
   top: 43%;
   width: 30%;
   max-width:30%;
+  z-index: -1;
 }
 .Back_muscles-img{
   border: 0px solid red;
@@ -77,6 +86,7 @@
   top: 18%;
   width: 34%;
   max-width:34%;
+  z-index: -1;
 }
 .Glutes-img{
   border: 0px solid red;
@@ -85,6 +95,7 @@
   top: 41.5%;
   width: 28.5%;
   max-width:28.5%;
+  z-index: -1;
 }
 .Hamstrings-img{
   border: 0px solid red;
@@ -93,6 +104,7 @@
   top: 49%;
   width: 28.5%;
   max-width:28.5%;
+  z-index: -1;
 }
 .Calf-img{
   border: 0px solid red;
@@ -101,6 +113,7 @@
   top: 62%;
   width: 28.5%;
   max-width:28.5%;
+  z-index: -1;
 }
 .Triceps-img{
   border: 0px solid red;
@@ -109,4 +122,5 @@
   top: 24%;
   width: 42%;
   max-width:42%;
+  z-index: -1;
 }
