@@ -9,14 +9,14 @@ app = Flask(__name__)
 
 chatbot = ChatBot()
 
+global response_dict
+response_dict = {"response": "Hi, I am JARVIS, I am here to help you with exercise or muscle questions."}
+
+
 @app.route("/")
 def index():
     """Return the homepage."""
     return render_template("index.html")
-
-
-global response_dict
-response_dict = {"response": "Hi, I am JARVIS, I am here to help you with exercise or muscle questions."}
 
 
 @app.route('/sendjson', methods=["GET", "POST"])
