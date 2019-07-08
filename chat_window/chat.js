@@ -17,7 +17,8 @@
     };
     $(function () {
         var getMessageText, message_side, sendMessage, responseMessage;
-     
+        message_side = 'right';
+
         getMessageText = function () {
             var $message_input;
             $message_input = $('.message_input');
@@ -33,7 +34,7 @@
 
             $('.message_input').val('');
             $messages = $('.messages');
-            message_side ='left';
+            message_side = message_side === 'right' ? 'left' : 'right';
 
             message = new Message({
                 text: text,
@@ -56,7 +57,7 @@
 
             $('.message_input').val('');
             $messages = $('.messages');
-            message_side = 'right';
+            message_side = message_side === 'right' ? 'left' : 'right';
 
             message = new Message({
                 text: text,
