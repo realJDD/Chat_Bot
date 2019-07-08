@@ -3,28 +3,89 @@
 
 <head>
   <title>Chat Bot</title>
-
   <!-- Bootstrap core CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap core JS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" rel="stylesheet">
   <!-- Font Awesome -->
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!--load all styles -->
-
-  <!-- CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <!-- cloudflare -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <!-- SVG CSS -->
   <link href="../static/css/CSS.css" rel="stylesheet">
-
+  <!-- chat_window css/js -->
+  <link href="../static/css/chat_window.css" rel="stylesheet">
+  <script src="../static/js/chat.js"></script>
 </head>
 
 <body>
 
 <nav class="navbar navbar-dark bg-dark fixed-top">
-  <span class="navbar-brand mb-0 h1">Chat Bot</span>
+  <span class="navbar-brand mb-0 h1">J.A.R.V.I.S.</span>
 </nav>
-<br><br><br>
+
+<!-- Chat window -->
+<div class="container-fluid">
+  <div class="row" style="padding-top: 100px">
+    <div class="col-md-4">
+      <div class="chat_window">
+        <div class="top_menu">
+          <div class="buttons">
+            <div class="button close"></div>
+            <div class="button minimize"></div>
+            <div class="button maximize"></div>
+          </div>
+          <div class="title">Personal Trainer Bot</div>
+        </div>
+        <ul class="messages"></ul>
+        <div class="bottom_wrapper clearfix">
+          <div class="message_input_wrapper"><input class="message_input" placeholder="Ask your trainer for help with fitness..." /></div>
+          <div class="send_message">
+            <div class="icon"></div>
+            <div class="text">Send</div>
+          </div>
+        </div>
+      </div>
+      <div class="message_template">
+        <li class="message">
+          <div class="avatar"></div>
+          <div class="text_wrapper">
+          <div class="text"></div>
+          </div>
+        </li>
+      </div>
+    </div>
+    <!-- SVG -->
+    <div class="col-md-4">
+      <div class="wrapper">
+        <!-- <img src="../static/images/SVG/Front_Back-main.png" alt="Main" class="Main-img" style="display: none">
+        <img src="../static/images/SVG/Front_Back-abs.png" alt="Abs" class="Abs-img" style="display: none">
+        <img src="../static/images/SVG/Front_Back-back.png" alt="Back_muscles" class="Back_muscles-img" style="display: none">
+        <img src="../static/images/SVG/Front_Back-biceps.png" alt="Biceps" class="Biceps-img" style="display: none">
+        <img src="../static/images/SVG/Front_Back-calves.png" alt="Calf" class="Calf-img" style="display: none">
+        <img src="../static/images/SVG/Front_Back-chest.png" alt="Chest" class="Chest-img" style="display: none">
+        <img src="../static/images/SVG/Front_Back-forearms.png" alt="Forearms" class="Forearms-img" style="display: none">
+        <img src="../static/images/SVG/Front_Back-glutes.png" alt="Glutes" class="Glutes-img" style="display: block">
+        <img src="../static/images/SVG/Front_Back-hamstrings.png" alt="Hamstrings" class="Hamstrings-img" style="display: none">
+        <img src="../static/images/SVG/Front_Back-shoulders.png" alt="Shoulders" class="Shoulders-img" style="display: none">
+        <img src="../static/images/SVG/Front_Back-triceps.png" alt="Triceps" class="Triceps-img" style="display: none"> -->
+        <img src="../static/images/SVG/{{image_name}}.png">
+      </div>
+    </div>
+    <!-- Embedded Video -->
+    <div class="col-md-4">
+      <iframe width="260" height="200" src="https://www.youtube.com/embed/rpWrtXyEAN0?autoplay=1">
+      </iframe>
+    </div>
+  </div>
+</div>
 
 <!-- Font Awesome examples -->
-<div class="container h-100">
+<!-- <div class="container h-100">
   <div class="d-flex h-100 text-center align-items-center" >
     <div class="w-100 text-black">
       <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
@@ -43,69 +104,7 @@
       <span class="sr-only">Loading...</span>
     </div>
   </div>
-</div>
-
-<br><br><br>
-
-<div class="container">
-  <div class="row">
-    <div class="col-6">
-      <div class="wrapper">
-      <img src="../static/images/SVG/front.png" alt="Front" class="Front-img">
-      <img src="../static/images/SVG/front/chest.png" alt="Chest" class="Chest-img">
-      <img src="../static/images/SVG/front/abs.png" alt="Abs" class="Abs-img">
-      <img src="../static/images/SVG/front/biceps.png" alt="Biceps" class="Biceps-img">
-      <img src="../static/images/SVG/front/forearms.png" alt="Forearms" class="Forearms-img">
-      <img src="../static/images/SVG/front/lower legs.png" alt="Lower Legs" class="Lower_Legs-img">
-      <img src="../static/images/SVG/front/shoulders.png" alt="Shoulders" class="Shoulders-img">
-      <img src="../static/images/SVG/front/upper legs.png" alt="Upper Legs" class="Upper_Legs-img">
-      </div>
-    </div>
-    <div class="col-6">
-      <div class="wrapper">
-      <img src="../static/images/SVG/Back.png" alt="Back" class="Back-img">
-      <img src="../static/images/SVG/back/Back_muscles.png" alt="Back_muscles" class="Back_muscles-img">
-      <img src="../static/images/SVG/back/Glutes.png" alt="Glutes" class="Glutes-img">
-      <img src="../static/images/SVG/back/Hamstrings.png" alt="Hamstrings" class="Hamstrings-img">
-      <img src="../static/images/SVG/back/Calf.png" alt="Calf" class="Calf-img">
-      <img src="../static/images/SVG/back/Triceps.png" alt="Triceps" class="Triceps-img">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-6">
-      <form>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-      </form>
-    </div>
-    <div class="col-6">
-      <div class="row">
-        <div class="col-12">
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/rpWrtXyEAN0?autoplay=1">
-          </iframe>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-12">
-          <img src="../static/images/1.png" alt="AI" class="img-fluid">
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-12">
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+</div> -->
 
 </body>
 
