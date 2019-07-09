@@ -62,15 +62,18 @@ $(document).ready(function () {
             // let response = response_object["response"];
             let response_list = await d3.json(`/sendjson`);
             let response = response_list[0]["response"];
+            response = response.replace(/\n/g, '<br>')
             let muscle = response_list[1]["info"];
+            let tag = response_list[1]["tag"];
             console.log(response);
             displayMessage(response, "left")
             console.log(response_list[1]["info"])
             showmuscle(muscle)
-            showVideo(muscle)
+            showVideo(muscle, tag)
+            console.log(tag)
         }
 
-        // Generate a welcome response
+        // Generate a welcome response value.replace(\n, '<br>')
         getResponse();
 
         // When user clicks on "Send" button
@@ -186,52 +189,55 @@ $(document).ready(function () {
         };
     }
 
-    function showVideo(text){
-        var muscle = text 
-        if (muscle === "delts"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/dumbbelllateralraise.mp4"
-        }
-        if (muscle === "traps"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/barbelluprightrow.mp4"
-        }
-        if (muscle === "pecs"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/reversegripbenchpress.mp4"
-        }
-        if (muscle === "lats"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/vbarpullup.mp4"
-        }
-        if (muscle === "spinal erectors"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/seatedcablerow.mp4"
-        }
-        if (muscle === "quads"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/sumosquat.mp4"
-        }
-        if (muscle === "hamstrings"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/legcurl.mp4"
-        }
-        if (muscle === "glutes"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/widesmithmachinesquat.mp4"
-        }
-        if (muscle === "soleus"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/standingonelegcalfraisewithdumbbell.mp4"
-        }
-        if (muscle === "calves"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/smithmachinecalfraise.mp4"
-        }
-        if (muscle === "abs"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/hangingkneeraise.mp4"
-        }
-        if (muscle === "obliques"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/dumbbellsidebend.mp4"
-        }
-        if (muscle === "biceps"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/alternatestandingdumbbellcurl.mp4"
-        }
-        if (muscle === "triceps"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/standingfrenchpress.mp4"
-        }
-        if (muscle === "forearms"){
-            return  document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/wristroller.mp4"
+    function showVideo(muscle, tag) {
+        if (tag == "exercise") {
+            return function () {
+                if (muscle == "delts") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/dumbbelllateralraise.mp4"
+                }
+                if (muscle == "traps") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/barbelluprightrow.mp4"
+                }
+                if (muscle == "pecs") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/reversegripbenchpress.mp4"
+                }
+                if (muscle == "lats") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/vbarpullup.mp4"
+                }
+                if (muscle == "spinal erectors") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/seatedcablerow.mp4"
+                }
+                if (muscle == "quads") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/sumosquat.mp4"
+                }
+                if (muscle == "hamstrings") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/legcurl.mp4"
+                }
+                if (muscle == "glutes") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/widesmithmachinesquat.mp4"
+                }
+                if (muscle == "soleus") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/standingonelegcalfraisewithdumbbell.mp4"
+                }
+                if (muscle == "calves") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/smithmachinecalfraise.mp4"
+                }
+                if (muscle == "abs") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/hangingkneeraise.mp4"
+                }
+                if (muscle == "obliques") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/dumbbellsidebend.mp4"
+                }
+                if (muscle == "biceps") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/alternatestandingdumbbellcurl.mp4"
+                }
+                if (muscle == "triceps") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/standingfrenchpress.mp4"
+                }
+                if (muscle == "forearms") {
+                    return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/wristroller.mp4"
+                }
+            }()
         }
     }
 
