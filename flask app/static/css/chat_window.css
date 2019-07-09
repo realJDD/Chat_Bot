@@ -10,8 +10,8 @@ body {
 .chat_window {
   position: absolute;
   width: calc(100% - 20px);
-  max-width: 800px;
-  height: 700px;
+  max-width: 400px;
+  height: 600px;
   border-radius: 10px;
   background-color: #fff;
   left: 50%;
@@ -40,7 +40,7 @@ body {
   list-style: none;
   padding: 20px 10px 0 10px;
   margin: 0;
-  height: 545px;
+  height: 440px;
   overflow: scroll;
 }
 
@@ -157,7 +157,7 @@ body {
   height: 50px;
   border-radius: 25px;
   border: 1px solid #bcbdc0;
-  width: calc(100% - 160px);
+  width: calc(100% - 110px);
   position: relative;
   padding: 0 20px;
 }
@@ -173,7 +173,7 @@ body {
 }
 
 .bottom_wrapper .send_message {
-  width: 140px;
+  width: 100px;
   height: 50px;
   display: inline-block;
   border-radius: 50px;
