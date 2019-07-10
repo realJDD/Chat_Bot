@@ -4,7 +4,7 @@ var data = [
       "response": "OK! Show the location of the muscles for legs on the SVG!"
   },
   {
-      "info": "upper legs",
+      "info": "lats",
       "tab": "location"
   }
 ]
@@ -61,9 +61,10 @@ function synonyms(input) {
   var forearms = ["forearms"];
   var legs = ["legs"];
   var ulegs = ["upper legs", "top of legs"];
+  var low_legs = ["lower legs"];
   var quads = ["quadriceps", "quads", "thighs", "biceps femoris"];
   var hams = ["back of legs", "hamstrings", "hammies"];
-  var calves = ["lower legs", "calves", "soleus", "gastrocnemius"];
+  var calves = ["calves", "soleus", "gastrocnemius"];
   var core = ["stomach", "belly", "gut"];
   var abs = ["abdomen", "abs", "six-pack", "rectus abdominis"];
   var obliques = ["external obliques", "obliques"];
@@ -112,6 +113,8 @@ function synonyms(input) {
     return ["Lower Legs", "Upper Legs", "Glutes", "Hamstrings", "Calf"]
   } else if (ulegs.includes(input)){
     return ["Upper Legs", "Glutes", "Hamstrings"]
+  } else if (low_legs.includes(input)){
+    return ["Lower Legs", "Calf"]
   };
 }
 
