@@ -120,18 +120,19 @@ $(document).ready(function () {
 
     }
 
-    function reset() {
-        // Array of SVG parts that can be highlighted
-        var svgParts = ["Chest", "Abs", "Biceps", "Forearms", 
-                    "Lower Legs", "delts", "rear_delts", "spine", "Upper Legs", "Back_muscles", 
-                    "Glutes", "Hamstrings", "Calf", "Triceps", "lats", "obliques", "traps"];
-      
-        // Loop through to change z-index to behind base image
-        var i;
-        for (i = 0; i < svgParts.length; i++) {
-          document.getElementById(svgParts[i]).style.zIndex = -1;
-      }
-      }
+   // Function to reset the SVG image on new chatbot input
+function reset() {
+    // Array of SVG parts that can be highlighted
+    var svgParts = ["Chest", "Abs", "Biceps", "Forearms", 
+                "Lower Legs", "delts", "rear_delts", "spine", "Upper Legs", "Back_muscles", 
+                "Glutes", "Hamstrings", "Calf", "Triceps", "lats", "obliques", "traps"];
+  
+    // Loop through to change z-index to behind base image
+    var i;
+    for (i = 0; i < svgParts.length; i++) {
+      document.getElementById(svgParts[i]).style.zIndex = -1;
+  }
+  }
 
     // Function to isolate SVG element from chatbot output
 function synonyms(input) {
@@ -149,9 +150,10 @@ function synonyms(input) {
     var forearms = ["forearms"];
     var legs = ["legs"];
     var ulegs = ["upper legs", "top of legs"];
+    var low_legs = ["lower legs"];
     var quads = ["quadriceps", "quads", "thighs", "biceps femoris"];
     var hams = ["back of legs", "hamstrings", "hammies"];
-    var calves = ["lower legs", "calves", "soleus", "gastrocnemius"];
+    var calves = ["calves", "soleus", "gastrocnemius"];
     var core = ["stomach", "belly", "gut"];
     var abs = ["abdomen", "abs", "six-pack", "rectus abdominis"];
     var obliques = ["external obliques", "obliques"];
@@ -200,6 +202,8 @@ function synonyms(input) {
       return ["Lower Legs", "Upper Legs", "Glutes", "Hamstrings", "Calf"]
     } else if (ulegs.includes(input)){
       return ["Upper Legs", "Glutes", "Hamstrings"]
+    } else if (low_legs.includes(input)){
+      return ["Lower Legs", "Calf"]
     };
   }
 
