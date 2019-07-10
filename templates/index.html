@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Chat Bot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- CSS -->
+    <link href="../static/css/CSS.css" rel="stylesheet">
+    <link href="../static/css/chat_window.css" rel="stylesheet">
+    <script src="../static/js/chat.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <span class="navbar-brand mb-0 h1">Chat Bot</span>
+    </nav>
+    <br><br><br>
+
+    <div class="container">
+        <div class="row" style="padding-top: 100px">
+            <div class="col-sm-4">
+                <div class="chat_window">
+                    <div class="top_menu">
+                        <div class="buttons">
+                            <div class="button close"></div>
+                            <div class="button minimize"></div>
+                            <div class="button maximize"></div>
+                        </div>
+                        <div class="title">John Matrix</div>
+                    </div>
+                    <ul class="messages"></ul>
+                    <div class="bottom_wrapper clearfix">
+                        <div class="message_input_wrapper"><input class="message_input"
+                                placeholder="How do I train biceps..." /></div>
+                        <div class="send_message">
+                            <div class="icon"></div>
+                            <div class="text">Send</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_template">
+                    <li class="message">
+                        <div class="avatar"></div>
+                        <div class="text_wrapper">
+                            <div class="text"></div>
+                        </div>
+                    </li>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4" style="padding-left: 100px" onclick="showmuscle()">
+                <div class="wrapper">
+                    <img src="../static/images/SVG/front.png" id="Front" alt="Front" class="Front-img">
+                    <img src="../static/images/SVG/front/chest.png" id="Chest" alt="Chest" class="Chest-img">
+                    <img src="../static/images/SVG/front/abs.png" id="Abs" alt="Abs" class="Abs-img">
+                    <img src="../static/images/SVG/front/biceps.png" id="Biceps" alt="Biceps" class="Biceps-img">
+                    <img src="../static/images/SVG/front/forearms.png" id="Forearms" alt="Forearms"
+                        class="Forearms-img">
+                    <img src="../static/images/SVG/front/lower legs.png" id="Lower Legs" alt="Lower Legs"
+                        class="Lower_Legs-img">
+                    <img src="../static/images/SVG/front/shoulders.png" id="Shoulders" alt="Shoulders"
+                        class="Shoulders-img">
+                    <img src="../static/images/SVG/front/upper legs.png" id="Upper Legs" alt="Upper Legs"
+                        class="Upper_Legs-img">
+                </div>
+                <div class="wrapper">
+                    <img src="../static/images/SVG/Back.png" id="Back" alt="Back" class="Back-img">
+                    <img src="../static/images/SVG/back/Back_muscles.png" id="Back_muscles" alt="Back_muscles"
+                        class="Back_muscles-img">
+                    <img src="../static/images/SVG/back/Glutes.png" id="Glutes" alt="Glutes" class="Glutes-img">
+                    <img src="../static/images/SVG/back/Hamstrings.png" id="Hamstrings" alt="Hamstrings"
+                        class="Hamstrings-img">
+                    <img src="../static/images/SVG/back/Calf.png" id="Calf" alt="Calf" class="Calf-img">
+                    <img src="../static/images/SVG/back/Triceps.png" id="Triceps" alt="Triceps" class="Triceps-img">
+                </div>
+            </div>
+            <div class="col-sm-4" style="padding-top: 180px">
+                <video width="500" height="400" controls autoplay id="exerciseVideo">
+                    <source
+                        src="#"
+                        type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
