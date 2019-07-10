@@ -4,7 +4,7 @@ var data = [
       "response": "OK! Show the location of the muscles for legs on the SVG!"
   },
   {
-      "info": "lats",
+      "info": "lower legs",
       "tab": "location"
   }
 ]
