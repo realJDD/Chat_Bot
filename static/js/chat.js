@@ -210,6 +210,7 @@ function synonyms(input) {
     function showVideo(muscle, tag) {
         if (tag == "exercise") {
             return function () {
+                window.location = '#jumpHere';
                 if (muscle == "deltoids") {
                     return document.getElementById('exerciseVideo').src = "https://cdn.muscleandstrength.com/video/dumbbelllateralraise.mp4"
                 }
@@ -293,5 +294,3 @@ function synonyms(input) {
     }
 
 }.call(this));
-
-

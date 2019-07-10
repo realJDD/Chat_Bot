@@ -1,172 +1,181 @@
 .wrapper{
-    display: inline-block;
-    position:relative;
-    width: 70%;
-    max-width: 70%;
-  }
-  .Front-img{
-    width: 100%;
-    max-width: 100%;
-    border: 0px solid blue;
-    z-index: 1;
-  }
-  .Back-img{
-    width: 100%;
-    max-width: 100%;
-    border: 0px solid red;
-    z-index: 1;
-  }
-  .Chest-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 33%;
-    top: 19%;
-    width: 30%;
-    max-width:30%;
-    z-index: -1;
-  }
-  .Abs-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 40%;
-    top: 27%;
-    width: 16%;
-    max-width:16%;
-    z-index: -1;
-  }
-  .Biceps-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 22.5%;
-    top: 24%;
-    width: 51%;
-    max-width:51%;
-    z-index: -1;
-  }
-  .Forearms-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 15%;
-    top: 33%;
-    width: 65.5%;
-    max-width:65.5%;
-    z-index: -1;
-  }
-  .Lower_Legs-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 35%;
-    top: 68%;
-    width: 26%;
-    max-width:26%;
-    z-index: -1;
-  }
-  .Delts-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 0%;
-    top: 0%;
-    width: 100%;
-    max-width:100%;
-    z-index: -1;
-  }
-  .Upper_Legs-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 33%;
-    top: 43%;
-    width: 30%;
-    max-width:30%;
-    z-index: -1;
-  }
-  .Back_muscles-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 34%;
-    top: 18%;
-    width: 34%;
-    max-width:34%;
-    z-index: -1;
-  }
-  .Glutes-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 37%;
-    top: 41.5%;
-    width: 28.5%;
-    max-width:28.5%;
-    z-index: -1;
-  }
-  .Hamstrings-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 37%;
-    top: 49%;
-    width: 28.5%;
-    max-width:28.5%;
-    z-index: -1;
-  }
-  .Calf-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 37%;
-    top: 62%;
-    width: 28.5%;
-    max-width:28.5%;
-    z-index: -1;
-  }
-  .Triceps-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 30%;
-    top: 24%;
-    width: 42%;
-    max-width:42%;
-    z-index: -1;
-  }
-  .Lats-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 0%;
-    top: 0%;
-    width: 100%;
-    max-width:100%;
-    z-index: -1;
-  }
-  .Obliques-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 0%;
-    top: 0%;
-    width: 100%;
-    max-width:100%;
-    z-index: -1;
-  }
-  .RDelts-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 0%;
-    top: 0%;
-    width: 100%;
-    max-width:100%;
-    z-index: -1;
-  }
-  .Spine-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 0%;
-    top: 0%;
-    width: 100%;
-    max-width:100%;
-    z-index: -1;
-  }
-  .Traps-img{
-    border: 0px solid red;
-    position:absolute;
-    right: 0%;
-    top: 0%;
-    width: 100%;
-    max-width:100%;
-    z-index: -1;
-  }
-  
+  display: inline-block;
+  position:relative;
+  width: 112%;
+  max-width: 112%;
+}
+.Front-img{
+  width: 100%;
+  max-width: 100%;
+  border: 0px solid blue;
+  z-index: 1;
+}
+.Back-img{
+  width: 100%;
+  max-width: 100%;
+  border: 0px solid red;
+  z-index: 1;
+}
+.Chest-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 33%;
+  top: 19%;
+  width: 30%;
+  max-width:30%;
+  z-index: -1;
+}
+.Abs-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 40%;
+  top: 27%;
+  width: 16%;
+  max-width:16%;
+  z-index: -1;
+}
+.Biceps-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 22.5%;
+  top: 24%;
+  width: 51%;
+  max-width:51%;
+  z-index: -1;
+}
+.Forearms-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 15%;
+  top: 33%;
+  width: 65.5%;
+  max-width:65.5%;
+  z-index: -1;
+}
+.Lower_Legs-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 35%;
+  top: 68%;
+  width: 26%;
+  max-width:26%;
+  z-index: -1;
+}
+.Delts-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 0%;
+  top: 0%;
+  width: 100%;
+  max-width:100%;
+  z-index: -1;
+}
+.Upper_Legs-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 33%;
+  top: 43%;
+  width: 30%;
+  max-width:30%;
+  z-index: -1;
+}
+.Back_muscles-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 34%;
+  top: 16.7%;
+  width: 34%;
+  max-width:34%;
+  z-index: -1;
+}
+.Glutes-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 37%;
+  top: 39.5%;
+  width: 28.5%;
+  max-width:28.5%;
+  z-index: -1;
+}
+.Hamstrings-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 37%;
+  top: 47%;
+  width: 28.5%;
+  max-width:28.5%;
+  z-index: -1;
+}
+.Calf-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 37%;
+  top: 60%;
+  width: 28.5%;
+  max-width:28.5%;
+  z-index: -1;
+}
+.Triceps-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 30%;
+  top: 22%;
+  width: 42%;
+  max-width:42%;
+  z-index: -1;
+}
+.Lats-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 0%;
+  top: -1.7%;
+  width: 100%;
+  max-width:100%;
+  z-index: -1;
+}
+.Obliques-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 0%;
+  top: 0%;
+  width: 100%;
+  max-width:100%;
+  z-index: -1;
+}
+.RDelts-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 0%;
+  top: -1.3%;
+  width: 100%;
+  max-width:100%;
+  z-index: -1;
+}
+.Spine-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 0%;
+  top: -1.7%;
+  width: 100%;
+  max-width:100%;
+  z-index: -1;
+}
+.Traps-img{
+  border: 0px solid red;
+  position:absolute;
+  right: 0%;
+  top: -1%;
+  width: 100%;
+  max-width:100%;
+  z-index: -1;
+}
+.your-centered-div {
+  width: 560px; /* you have to have a size or this method doesn't work */
+  height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+
+  position: absolute; /* positions out of the flow, but according to the nearest parent */
+  top: 0; right: 0; /* confuse it i guess */
+  bottom: 0; left: 0;
+  margin: auto; /* make em equal */
+  padding-top: 570px;
+}

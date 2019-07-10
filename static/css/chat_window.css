@@ -3,15 +3,15 @@
 }
 
 body {
-  background-color: #edeff2;
+  background-color: #ffffff;
   font-family: "Calibri", "Roboto", sans-serif;
 }
 
 .chat_window {
   position: absolute;
   width: calc(100% - 20px);
-  max-width: 400px;
-  height: 600px;
+  max-width: 600px;
+  height: 548px;
   border-radius: 10px;
   background-color: #fff;
   left: 50%;
@@ -40,7 +40,7 @@ body {
   list-style: none;
   padding: 20px 10px 0 10px;
   margin: 0;
-  height: 440px;
+  height: 385px;
   overflow: scroll;
 }
 
