@@ -141,7 +141,7 @@ class ChatBot:
                 if key_word == "legs":
                     response = f"OK! Show the exercise for {key_word} now!" + f"\nPlease pick a specific muscle below to train for {key_word}.\n\n"
                     list_to_match = []
-                    for item in ["uppers legs", "lower legs"]:
+                    for item in ["upper legs", "lower legs"]:
                         for it in self.body_muscle_dict[item]["muscles"]:
                             list_to_match.append(it["name"])
                             response = response + it["name"] + "\n"
