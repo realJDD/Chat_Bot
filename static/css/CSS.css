@@ -1,140 +1,172 @@
-.wrapper {
+.wrapper{
     display: inline-block;
-    position: relative;
+    position:relative;
     width: 70%;
     max-width: 70%;
-}
-
-.Front-img {
+  }
+  .Front-img{
     width: 100%;
     max-width: 100%;
     border: 0px solid blue;
     z-index: 1;
-}
-
-.Back-img {
+  }
+  .Back-img{
     width: 100%;
     max-width: 100%;
     border: 0px solid red;
     z-index: 1;
-}
-
-.Chest-img {
+  }
+  .Chest-img{
     border: 0px solid red;
-    position: absolute;
+    position:absolute;
     right: 33%;
     top: 19%;
     width: 30%;
-    max-width: 30%;
+    max-width:30%;
     z-index: -1;
-}
-
-.Abs-img {
+  }
+  .Abs-img{
     border: 0px solid red;
-    position: absolute;
+    position:absolute;
     right: 40%;
     top: 27%;
     width: 16%;
-    max-width: 16%;
+    max-width:16%;
     z-index: -1;
-}
-
-.Biceps-img {
+  }
+  .Biceps-img{
     border: 0px solid red;
-    position: absolute;
+    position:absolute;
     right: 22.5%;
     top: 24%;
     width: 51%;
-    max-width: 51%;
+    max-width:51%;
     z-index: -1;
-}
-
-.Forearms-img {
+  }
+  .Forearms-img{
     border: 0px solid red;
-    position: absolute;
+    position:absolute;
     right: 15%;
     top: 33%;
     width: 65.5%;
-    max-width: 65.5%;
+    max-width:65.5%;
     z-index: -1;
-}
-
-.Lower_Legs-img {
+  }
+  .Lower_Legs-img{
     border: 0px solid red;
-    position: absolute;
+    position:absolute;
     right: 35%;
     top: 68%;
     width: 26%;
-    max-width: 26%;
+    max-width:26%;
     z-index: -1;
-}
-
-.Shoulders-img {
+  }
+  .Delts-img{
     border: 0px solid red;
-    position: absolute;
-    right: 25.5%;
-    top: 16%;
-    width: 45%;
-    max-width: 45%;
+    position:absolute;
+    right: 0%;
+    top: 0%;
+    width: 100%;
+    max-width:100%;
     z-index: -1;
-}
-
-.Upper_Legs-img {
+  }
+  .Upper_Legs-img{
     border: 0px solid red;
-    position: absolute;
+    position:absolute;
     right: 33%;
     top: 43%;
     width: 30%;
-    max-width: 30%;
+    max-width:30%;
     z-index: -1;
-}
-
-.Back_muscles-img {
+  }
+  .Back_muscles-img{
     border: 0px solid red;
-    position: absolute;
+    position:absolute;
     right: 34%;
     top: 18%;
     width: 34%;
-    max-width: 34%;
+    max-width:34%;
     z-index: -1;
-}
-
-.Glutes-img {
+  }
+  .Glutes-img{
     border: 0px solid red;
-    position: absolute;
+    position:absolute;
     right: 37%;
     top: 41.5%;
     width: 28.5%;
-    max-width: 28.5%;
+    max-width:28.5%;
     z-index: -1;
-}
-
-.Hamstrings-img {
+  }
+  .Hamstrings-img{
     border: 0px solid red;
-    position: absolute;
+    position:absolute;
     right: 37%;
     top: 49%;
     width: 28.5%;
-    max-width: 28.5%;
+    max-width:28.5%;
     z-index: -1;
-}
-
-.Calf-img {
+  }
+  .Calf-img{
     border: 0px solid red;
-    position: absolute;
+    position:absolute;
     right: 37%;
     top: 62%;
     width: 28.5%;
-    max-width: 28.5%;
+    max-width:28.5%;
     z-index: -1;
-}
-
-.Triceps-img {
+  }
+  .Triceps-img{
     border: 0px solid red;
-    position: absolute;
+    position:absolute;
     right: 30%;
     top: 24%;
     width: 42%;
-    max-width: 42%;
+    max-width:42%;
     z-index: -1;
-}
+  }
+  .Lats-img{
+    border: 0px solid red;
+    position:absolute;
+    right: 0%;
+    top: 0%;
+    width: 100%;
+    max-width:100%;
+    z-index: -1;
+  }
+  .Obliques-img{
+    border: 0px solid red;
+    position:absolute;
+    right: 0%;
+    top: 0%;
+    width: 100%;
+    max-width:100%;
+    z-index: -1;
+  }
+  .RDelts-img{
+    border: 0px solid red;
+    position:absolute;
+    right: 0%;
+    top: 0%;
+    width: 100%;
+    max-width:100%;
+    z-index: -1;
+  }
+  .Spine-img{
+    border: 0px solid red;
+    position:absolute;
+    right: 0%;
+    top: 0%;
+    width: 100%;
+    max-width:100%;
+    z-index: -1;
+  }
+  .Traps-img{
+    border: 0px solid red;
+    position:absolute;
+    right: 0%;
+    top: 0%;
+    width: 100%;
+    max-width:100%;
+    z-index: -1;
+  }
+  
