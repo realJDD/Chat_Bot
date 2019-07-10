@@ -260,6 +260,8 @@ class ChatBot:
                 self.perfect_match_list.remove("legs")
             if "beer belly" in self.perfect_match_list and "belly" in self.perfect_match_list:
                 self.perfect_match_list.remove("belly")
+            if "pectorals" in self.perfect_match_list and "pecs" in self.perfect_match_list:
+                self.perfect_match_list.remove("pecs")
             ##############################################################################################
             # problem with legs now
         print(self.key_words_list)
@@ -326,7 +328,7 @@ class ChatBot:
                         if len(self.key_words_list) == 0:
                             response = self.__other_responses()
                         else:
-                            response = "Please let me know if you want to show the corresponding exercises for the muscle/muscles or show the location(s) of it/them on the SVG.\nPlease type in 'exercise' or 'identification' to continue."
+                            response = "Would you like to see the muscle location(s) or view an exercise instructional video?\nPlease type in 'exercise' or 'identification' to continue."
                             self.matching_dict["matching_mode"] = True
                             self.matching_dict["list_to_match"] = ["exercise", "identification"]
                     
