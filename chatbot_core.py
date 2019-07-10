@@ -170,9 +170,11 @@ class ChatBot:
         
         if self.sentence_class == "identification":
             if key_word in self.higher_level_list:
-                response = f"OK! Show the location of the muscles for {key_word} on the SVG!"
+                # response = f"OK! Show the location of the muscles for {key_word} on the SVG!"
+                response = f"OK! Check the images to see the {key_word} muscles highlighted in red!"
             else:
-                response = f"OK! Show the location of {key_word} on the SVG!"
+                # response = f"OK! Show the location of {key_word} on the SVG!"
+                response = f"OK! Check the images to see the {key_word} muscle highlighted in red!"
             self.info_dict["tag"] = self.sentence_class
             self.info_dict["info"] = key_word
             self.matching_dict["matching_mode"] = False
