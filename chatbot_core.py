@@ -262,6 +262,8 @@ class ChatBot:
                 self.perfect_match_list.remove("belly")
             if "pectorals" in self.perfect_match_list and "pecs" in self.perfect_match_list:
                 self.perfect_match_list.remove("pecs")
+            if "gluteus maximus" in self.perfect_match_list and "glutes" in self.perfect_match_list:
+                self.perfect_match_list.remove("glutes")    
             ##############################################################################################
             # problem with legs now
         print(self.key_words_list)
