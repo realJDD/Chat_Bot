@@ -37,6 +37,7 @@ function reset() {
   var svgParts = ["Chest", "Abs", "Biceps", "Forearms", 
               "Lower Legs", "delts", "rear_delts", "spine", "Upper Legs", "Back_muscles", 
               "Glutes", "Hamstrings", "Calf", "Triceps", "lats", "obliques", "traps"];
+
   // Loop through to change z-index to behind base image
   var i;
   for (i = 0; i < svgParts.length; i++) {
