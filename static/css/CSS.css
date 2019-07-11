@@ -10,165 +10,161 @@
   border: 0px solid blue;
   z-index: 1;
 }
+.Front2-img{
+  position:absolute;
+  left: 0%;
+  width: 100%;
+  max-width:100%;
+  z-index: 1;
+}
 .Back-img{
   width: 100%;
   max-width: 100%;
   border: 0px solid red;
   z-index: 1;
 }
-.Chest-img{
-  border: 0px solid red;
+.Back2-img{
   position:absolute;
-  right: 33%;
-  top: 19%;
-  width: 30%;
-  max-width:30%;
-  z-index: -1;
-}
-.Abs-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 40%;
-  top: 27%;
-  width: 16%;
-  max-width:16%;
-  z-index: -1;
-}
-.Biceps-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 22.5%;
-  top: 24%;
-  width: 51%;
-  max-width:51%;
-  z-index: -1;
-}
-.Forearms-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 15%;
-  top: 33%;
-  width: 65.5%;
-  max-width:65.5%;
-  z-index: -1;
-}
-.Lower_Legs-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 35%;
-  top: 68%;
-  width: 26%;
-  max-width:26%;
-  z-index: -1;
-}
-.Delts-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 0%;
-  top: 0%;
+  left: 0%;
   width: 100%;
   max-width:100%;
-  z-index: -1;
+  z-index: 1;
 }
-.Upper_Legs-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 33%;
-  top: 43%;
-  width: 30%;
-  max-width:30%;
-  z-index: -1;
+
+/* svg base fills */
+.head {
+  fill: black;
 }
-.Back_muscles-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 34%;
-  top: 16.7%;
-  width: 34%;
-  max-width:34%;
-  z-index: -1;
+.delt {
+  fill: black;
 }
-.Glutes-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 37%;
-  top: 39.5%;
-  width: 28.5%;
-  max-width:28.5%;
-  z-index: -1;
+.pecs {
+  fill: black;
 }
-.Hamstrings-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 37%;
-  top: 47%;
-  width: 28.5%;
-  max-width:28.5%;
-  z-index: -1;
+.biceps {
+  fill: black;
 }
-.Calf-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 37%;
-  top: 60%;
-  width: 28.5%;
-  max-width:28.5%;
-  z-index: -1;
+.abs {
+  fill: black;
 }
-.Triceps-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 30%;
-  top: 22%;
-  width: 42%;
-  max-width:42%;
-  z-index: -1;
+.forearm {
+  fill: black;
 }
-.Lats-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 0%;
-  top: -1.7%;
-  width: 100%;
-  max-width:100%;
-  z-index: -1;
+.obliques {
+  fill: black;
 }
-.Obliques-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 0%;
-  top: 0%;
-  width: 100%;
-  max-width:100%;
-  z-index: -1;
+.quads {
+  fill: black;
 }
-.RDelts-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 0%;
-  top: -1.3%;
-  width: 100%;
-  max-width:100%;
-  z-index: -1;
+.low_leg {
+  fill: black;
 }
-.Spine-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 0%;
-  top: -1.7%;
-  width: 100%;
-  max-width:100%;
-  z-index: -1;
+.calf {
+  fill: black;
 }
-.Traps-img{
-  border: 0px solid red;
-  position:absolute;
-  right: 0%;
-  top: -1%;
-  width: 100%;
-  max-width:100%;
-  z-index: -1;
+.traps {
+  fill: black;
 }
+.triceps {
+  fill: black;
+}
+.lats {
+  fill: black;
+}
+.spine {
+  fill: black;
+}
+.hams {
+  fill: black;
+}
+.glutes {
+  fill: black;
+}
+
+
+
+/* svg on hover */
+.quads:hover {
+  fill: blue;
+}
+.head:hover {
+  fill: blue;
+}
+.delt:hover {
+  fill: blue;
+}
+.pecs:hover {
+  fill: blue;
+}
+.biceps:hover {
+  fill: blue;
+}
+.abs:hover {
+  fill: blue;
+}
+.forearm:hover {
+  fill: blue;
+}
+.obliques:hover {
+  fill: blue;
+}
+.quads:hover {
+  fill: blue;
+}
+.low_leg:hover {
+  fill: blue;
+}
+.calf:hover {
+  fill: blue;
+}
+.traps:hover {
+  fill: blue;
+}
+.triceps:hover {
+  fill: blue;
+}
+.lats:hover {
+  fill: blue;
+}
+.spine:hover {
+  fill: blue;
+}
+.hams:hover {
+  fill: blue;
+}
+.glutes:hover {
+  fill: blue;
+}
+
+text{
+  display:none;
+  fill:#fff;
+  font-size:4em;
+  font-family:sans-serif;
+}
+
+g:hover > text{
+  display:block;
+}
+
+.img-overlay-wrap {
+  position: relative;
+  display: inline-block; /* <= shrinks container to image size */
+  transition: transform 150ms ease-in-out;
+}
+
+.img-overlay-wrap img { /* <= optional, for responsiveness */
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+.img-overlay-wrap svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .your-centered-div {
   width: 900px; /* you have to have a size or this method doesn't work */
   height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
@@ -179,4 +175,3 @@
   margin: auto; /* make em equal */
   padding-top: 570px;
 }
-
