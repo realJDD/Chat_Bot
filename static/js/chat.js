@@ -148,7 +148,7 @@ $(document).ready(function () {
             var j;
             for (j = 0; j < clear.length; j++) {
                 console.log(clear[j]);
-                clear[j].style.fill = "black";
+                clear[j].style.fill = "";
             }
         }
     }
