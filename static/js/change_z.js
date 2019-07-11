@@ -4,14 +4,14 @@ var data = [
       "response": "OK! Show the location of the muscles for legs on the SVG!"
   },
   {
-      "info": "lower legs",
+      "info": "upper body",
       "tab": "location"
   }
 ]
 
 // Function to highlight muscle groups
 function showmuscle() {
-  console.log(data[1]["info"]);
+  // console.log(data[1]["info"]);
   // Input from the chatbot
   var muscle = data[1]["info"];
 
@@ -23,20 +23,32 @@ function showmuscle() {
   if (Array.isArray(elem)){
     elem.forEach(function(element) {
       console.log(element);
-      document.getElementById(element).style.zIndex = 1;
+      // var x = document.getElementsByClassName(element);
+      // x[0].style.fill = "red";
+      var x = document.getElementsByClassName(element);
+      var i;
+      for (i = 0; i < x.length; i++) {
+          x[i].style.fill = "red";
+      }
     })
   } else {
-    document.getElementById(elem).style.zIndex = 1;
-  };
+    console.log(elem);
+    var x = document.getElementsByClassName(elem);
+    console.log(x);
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.fill = "red";
+    }
+    };
 
 }
 
 // Function to reset the SVG image on new chatbot input
 function reset() {
   // Array of SVG parts that can be highlighted
-  var svgParts = ["Chest", "Abs", "Biceps", "Forearms", 
-              "Lower Legs", "delts", "rear_delts", "spine", "Upper Legs", "Back_muscles", 
-              "Glutes", "Hamstrings", "Calf", "Triceps", "lats", "obliques", "traps"];
+  var svgParts = ["delt", "pecs", "biceps", "abs", "forearm",
+                  "obliques", "quads", "low_leg", "calf", "traps",
+                  "triceps", "lats", "spine", "hams", "glutes"]
 
   // Loop through to change z-index to behind base image
   var i;
@@ -72,49 +84,48 @@ function synonyms(input) {
 
 
   if (shoulders.includes(input)){
-    return ["rear_delts", "delts", "traps"] 
+    return ["delt", "traps"] 
   } else if (delts.includes(input)){
-    return ["rear_delts", "delts"]
+    return ["delt"]
   } else if (traps.includes(input)){
     return "traps"
   } else if (chest.includes(input)){
-    return "Chest"
+    return "pecs"
   } else if (core.includes(input)){
-    return ["Abs", "obliques"]
+    return ["abs", "obliques"]
   } else if (abs.includes(input)){
-    return "Abs"
+    return "abs"
   } else if (obliques.includes(input)){
     return "obliques"
   } else if (arms.includes(input)){
-    return ["Biceps", "Triceps", "Forearms"]
+    return ["biceps", "triceps", "forearm"]
   } else if (biceps.includes(input)){
-    return "Biceps"
+    return "biceps"
   } else if (forearms.includes(input)){
-    return "Forearms"
+    return "forearm"
   } else if (calves.includes(input)){
-    return "Calf"
+    return "calf"
   } else if (quads.includes(input)){
-    return "Upper Legs"
+    return "quads"
   } else if (back.includes(input)){
-    return "Back_muscles"
+    return ["traps", "lats", "spine"]
   } else if (spine.includes(input)){
     return "spine"
   } else if (lats.includes(input)){
     return "lats"
   } else if (glutes.includes(input)){
-    return "Glutes"
+    return "glutes"
   } else if (hams.includes(input)){
-    return "Hamstrings"
+    return "hams"
   } else if (triceps.includes(input)){
-    return "Triceps"
+    return "triceps"
   } else if (upper.includes(input)){
-    return ["Chest", "Abs", "Biceps", "Forearms", "Shoulders", "Back_muscles", "Triceps"]
+    return ["pecs", "abs", "obliques", "biceps", "forearm", "delt", "lats", "traps", "triceps"]
   } else if (legs.includes(input)){
-    return ["Lower Legs", "Upper Legs", "Glutes", "Hamstrings", "Calf"]
+    return ["quads", "low_leg", "glutes", "hams", "calf"]
   } else if (ulegs.includes(input)){
-    return ["Upper Legs", "Glutes", "Hamstrings"]
+    return ["quads", "glutes", "hams"]
   } else if (low_legs.includes(input)){
-    return ["Lower Legs", "Calf"]
+    return ["low_leg", "calf"]
   };
 }
-
