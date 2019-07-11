@@ -298,84 +298,85 @@ $(document).ready(function () {
         if (tag == "exercise") {
             return function () {
                 if (muscle == "deltoids") {
-                    return document.getElementById('exerciseDescription').innerHTML = "<strong>This is the delts exercise</strong><br>1. Lift your arms like you are flying.<br>1. Lift your arms like you are flying.<br>1. Lift your arms like you are flying.<br>1. Lift your arms like you are flying.<br>1. Lift your arms like you are flying.<br>1. Lift your arms like you are flying."
+                    return document.getElementById('exerciseDescription').innerHTML = "<h5><strong>Dumbbell Lateral Raise Instructions</strong></h5><br>1. The dumbbell lateral raise is a good exercise for building width in your upper body which gives you the V shape. Grab a set of dumbbells and stand straight up with the dumbbells at your sides.<br>2. Your palms should be facing your body. You should be holding the dumbbells slightly off your body, as this keeps the tension on the side delts. This is your starting position for the exercise.<br>3. To execute, slowly raise the dumbbells up to around shoulder height. It's important that you do not let your wrists go above your elbows while raising the weight, as this will take the work off the side delts and put it on the front delts.<br>4. Pause at the top of the movement, and then slowly lower the weight back to the starting position.<br>5. Do not let the dumbbells touch your body, and then raise them for the next rep."
                 }
                 if (muscle == "delts") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/dumbbelllateralraise.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "<h5><strong>Dumbbell Lateral Raise Instructions</strong></h5><br>1. The dumbbell lateral raise is a good exercise for building width in your upper body which gives you the V shape. Grab a set of dumbbells and stand straight up with the dumbbells at your sides.<br>2. Your palms should be facing your body. You should be holding the dumbbells slightly off your body, as this keeps the tension on the side delts. This is your starting position for the exercise.<br>3. To execute, slowly raise the dumbbells up to around shoulder height. It's important that you do not let your wrists go above your elbows while raising the weight, as this will take the work off the side delts and put it on the front delts.<br>4. Pause at the top of the movement, and then slowly lower the weight back to the starting position.<br>5. Do not let the dumbbells touch your body, and then raise them for the next rep."
                 }
                 if (muscle == "trapezius") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/barbelluprightrow.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "<h5><strong>Barbell Upright Row Instructions</strong></h5><br>1. The barbell upright row is one of the best exercises for building the upper traps and shoulders. Load up a barbell with the weight you want to use and stand facing it with your feet at around shoulder width apart.<br>2. Grasp the barbell with an overhand grip (palms facing down), and hands slightly closer than shoulder width apart.<br>3. Pick the bar up, bending at the knees and keeping your back straight.<br>4. Keeping your back straight and eyes facing forwards, lift the bar straight up while keeping it as close to your body as possible (you should pull the bar up to around chest height - nearly touching your chin).<br>5. Pause, and then slowly lower the bar back to the starting position.<br>6. Repeat for desired reps."
                 }
                 if (muscle == "traps") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/barbelluprightrow.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "<h5><strong>Barbell Upright Row Instructions</strong></h5><br>1. The barbell upright row is one of the best exercises for building the upper traps and shoulders. Load up a barbell with the weight you want to use and stand facing it with your feet at around shoulder width apart.<br>2. Grasp the barbell with an overhand grip (palms facing down), and hands slightly closer than shoulder width apart.<br>3. Pick the bar up, bending at the knees and keeping your back straight.<br>4. Keeping your back straight and eyes facing forwards, lift the bar straight up while keeping it as close to your body as possible (you should pull the bar up to around chest height - nearly touching your chin).<br>5. Pause, and then slowly lower the bar back to the starting position.<br>6. Repeat for desired reps."
                 }
                 if (muscle == "pectorals") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/reversegripbenchpress.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/reversegripbenchpress.mp4"
                 }
                 if (muscle == "pecs") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/reversegripbenchpress.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/reversegripbenchpress.mp4"
                 }
                 if (muscle == "latissimus dorsi") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/vbarpullup.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/vbarpullup.mp4"
                 }
                 if (muscle == "spinal erectors") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/seatedcablerow.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/seatedcablerow.mp4"
                 }
                 if (muscle == "quadriceps") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/sumosquat.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/sumosquat.mp4"
                 }
                 if (muscle == "biceps femoris") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/legcurl.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/legcurl.mp4"
                 }
                 if (muscle == "hamstrings") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/legcurl.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/legcurl.mp4"
                 }
                 if (muscle == "hammies") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/reversehacksquat.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/reversehacksquat.mp4"
                 }
                 if (muscle == "gluteus maximus") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/widesmithmachinesquat.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/widesmithmachinesquat.mp4"
                 }
                 if (muscle == "glutes") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/widesmithmachinesquat.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/widesmithmachinesquat.mp4"
                 }
                 if (muscle == "soleus") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/standingonelegcalfraisewithdumbbell.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/standingonelegcalfraisewithdumbbell.mp4"
                 }
                 if (muscle == "gastrocnemius") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/smithmachinecalfraise.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/smithmachinecalfraise.mp4"
                 }
                 if (muscle == "calves") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/smithmachinecalfraise.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/smithmachinecalfraise.mp4"
                 }
                 if (muscle == "abs") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/hangingkneeraise.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/hangingkneeraise.mp4"
                 }
                 if (muscle == "rectus abdominis") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/hangingkneeraise.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/hangingkneeraise.mp4"
                 }
                 if (muscle == "external obliques") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/dumbbellsidebend.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/dumbbellsidebend.mp4"
                 }
                 if (muscle == "obliques") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/dumbbellsidebend.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/dumbbellsidebend.mp4"
                 }
                 if (muscle == "biceps") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/alternatestandingdumbbellcurl.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/alternatestandingdumbbellcurl.mp4"
                 }
                 if (muscle == "biceps brachii") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/alternatestandingdumbbellcurl.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/alternatestandingdumbbellcurl.mp4"
                 }
                 if (muscle == "triceps") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/standingfrenchpress.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/standingfrenchpress.mp4"
                 }
                 if (muscle == "triceps brachii") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/standingfrenchpress.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/standingfrenchpress.mp4"
                 }
                 if (muscle == "forearms") {
-                    return document.getElementById('exerciseDescirption').innerHTML = "https://cdn.muscleandstrength.com/video/wristroller.mp4"
+                    return document.getElementById('exerciseDescription').innerHTML = "https://cdn.muscleandstrength.com/video/wristroller.mp4"
                 }
             }()
         }
 
+    
 }}.call(this));
