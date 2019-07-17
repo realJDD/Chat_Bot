@@ -164,3 +164,9 @@ g:hover > text{
   top: 0;
   left: 0;
 }
+
+.flex-box{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
